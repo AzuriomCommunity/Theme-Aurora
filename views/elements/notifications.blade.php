@@ -1,4 +1,4 @@
-<li class="nav-item dropdown notifications-dropdown">
+<li class="nav-item dropdown notifications-dropdown" style="list-style-type: none;">
     <a class="nav-link dropdown-toggle" href="#" id="notificationsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         <!-- Counter - Notifications -->
         <i class="fas fa-bell fa-fw"></i>

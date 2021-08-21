@@ -2,14 +2,10 @@
     <div class="header-nav-top sub-navigation">
         <div class="container">
             <ul class="header-nav-top-left">
-                <li class="item">
+                <li class="item" style="list-style-type: none;">
                     <div class="online">
                         @if($server && $server->isOnline())
-                            @if($server->getOnlinePlayers() > 1)
-                                <p><span>{{ $server->getOnlinePlayers() }}</span> Joueurs en connectés!</p>
-                            @else
-                                <p><span>{{ $server->getOnlinePlayers() }}</span> Joueur en connecté!</p>
-                            @endif
+                            <p><span>{{ $server->getOnlinePlayers() }}</span> Joueurs en connectés!</p>
                         @else
                             <p><i class="fas fa-times"></i> Joueur en ligne!</p>
                         @endif
@@ -31,7 +27,8 @@
                         </li>
                     @endif
                 @else
-                    <li class="item">
+                    @include('elements.notifications')
+                    <li class="item" style="list-style-type: none;">
                         <a id="userDropdown" class="nav-link dropdown-toggle user-nav-link" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <img src="{{ auth()->user()->getAvatar(150) }}" class="rounded img-fluid" alt="{{ auth()->user()->name }}"> {{ Auth::user()->name }} <span class="caret"></span>
                         </a>

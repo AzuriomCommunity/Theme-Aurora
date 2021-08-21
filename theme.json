@@ -1,11 +1,11 @@
 {
     "id": "aurora",
     "name": "Aurora",
-    "description": "Theme for Azuriom By Captain34",
-    "version": "1.0.2",
+    "description": "Theme for Azuriom By Oximov, Captain34",
+    "version": "1.1.0",
     "url": "",
     "authors": [
-        "Captain34"
+        "Oximov", "Captain34"
     ],
     "apiId": 44
 }
