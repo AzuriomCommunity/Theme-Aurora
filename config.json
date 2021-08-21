@@ -1,0 +1,24 @@
+{
+    "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "footer_description": "Parturient montes nascetur ridiculus mus mauris vitae ultricies. A lacus vestibulum sed arcu non. Facilisi etiam dignissim diam quis.",
+    "footer_links": [
+        {
+            "name": "CGU",
+            "value": "http://taliamc.fr/"
+        },
+        {
+            "name": "CGV",
+            "value": "http://taliamc.fr/"
+        },
+        {
+            "name": "Mentions l\u00e9gales",
+            "value": "http://taliamc.fr/"
+        }
+    ],
+    "footer_social_twitter": "https://twitter.com/",
+    "footer_social_discord": "https://discord.gg/u5XmjBAzmn",
+    "footer_social_steam": "pp",
+    "footer_social_youtube": "https://youtube.com",
+    "footer_social_teamspeak": "https://teamspeak.com",
+    "footer_social_instagram": "pp"
+}
