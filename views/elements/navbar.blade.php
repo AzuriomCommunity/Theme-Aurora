@@ -5,9 +5,9 @@
                 <li class="item" style="list-style-type: none;">
                     <div class="online">
                         @if($server && $server->isOnline())
-                            <p><span>{{ $server->getOnlinePlayers() }}</span> Joueurs en connectés!</p>
+                            <p>{{ trans_choice('messages.server.online', $server->getOnlinePlayers()) }}</p>
                         @else
-                            <p><i class="fas fa-times"></i> Joueur en ligne!</p>
+                            <p>{{ trans('messages.server.offline') }}</p>
                         @endif
                     </div>
                 </li>
