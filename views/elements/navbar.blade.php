@@ -14,13 +14,13 @@
             </ul>
             <ul class="header-nav-top-right">
                 @guest
-                    <li class="item">
+                    <li class="item" style="list-style-type: none;">
                         <a href="{{ route('login') }}">
                             {{ trans('auth.login') }}
                         </a>
                     </li>
                     @if(Route::has('register'))
-                        <li class="item">
+                        <li class="item" style="list-style-type: none;">
                             <a href="{{ route('register') }}">
                                 {{ trans('auth.register') }}
                             </a>
@@ -33,7 +33,7 @@
                             <img src="{{ auth()->user()->getAvatar(150) }}" class="rounded img-fluid" alt="{{ auth()->user()->name }}"> {{ Auth::user()->name }} <span class="caret"></span>
                         </a>
 
-                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
+                        <div class="dropdown-menu dropdown-menu-right dropdown-menu" aria-labelledby="userDropdown">
                             <a class="dropdown-item" href="{{ route('profile.index') }}">
                                 {{ trans('messages.nav.profile') }}
                             </a>
@@ -64,8 +64,8 @@
         </div>
     </div>
     
-    <div class="header-nav-bottom navigation">
-        <div class="container navigation-content">
+    <div class="header-nav-bottom navigation dropdown-menu-right">
+        <div class="container navigation-content ">
             <ul class="header-nav-bottom-left">
                 <li class="item logo">
                     <a href="{{ route('home') }}">
@@ -82,7 +82,7 @@
                             </a>
                         </li>
                     @else
-                        <li class="dropdown">
+                        <li class="dropdown item">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown{{ $element->id }}" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 {{ $element->name }}
                             </a>
