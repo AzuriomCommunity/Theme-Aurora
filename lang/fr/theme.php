@@ -2,7 +2,7 @@
 
 return [
     'news_title' => 'Actualités',
-    'footer_links_title' => 'Links',
+    'footer_links_title' => 'Liens',
 
     'config' => [
         'subtitle' => 'Sous-titre de la page d\'accueil',
