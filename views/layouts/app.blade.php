@@ -15,6 +15,7 @@
     <meta property="og:description" content="@yield('description', setting('description', ''))">
     <meta property="og:site_name" content="{{ site_name() }}">
 @stack('meta')
+    @laravelPWA
 
 <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
@@ -47,7 +48,7 @@
 
     <!-- Styles -->
     <link href="{{ asset('vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
-    <link href="{{ theme_asset('css/style.css') }}?v=1.0.3" rel="stylesheet">
+    <link href="{{ theme_asset('css/style.css') }}" rel="stylesheet">
     @stack('styles')
 </head>
 

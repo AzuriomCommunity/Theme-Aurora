@@ -420,6 +420,9 @@ table tbody td {
     padding: 0;
 }
 
+
+/* top navbar dropdown */
+
 .header-nav-top .dropdown-menu {
     z-index: 999;
     line-height: initial;
@@ -450,6 +453,42 @@ table tbody td {
 }
 
 .header-nav-top .dropdown-item:hover {
+    color: #1E2024;
+}
+
+
+/* bottom navbar dropdown */
+
+.header-nav-bottom .dropdown-menu {
+    z-index: 999;
+    line-height: initial;
+    background-color: #00E0FF;
+}
+
+.header-nav-bottom .item {
+    font-size: 18px;
+    transition: color 0.3s ease-in-out;
+    color: white;
+}
+
+.header-nav-bottom .item a {
+    color: white;
+}
+
+.header-nav-bottom .item a:hover,
+.header-nav-bottom .item:hover {
+    background-color: transparent;
+}
+
+.header-nav-bottom .item .dropdown-toggle::after {
+    border-top: 0.3em solid #00E0FF;
+}
+
+.header-nav-bottom .dropdown-item {
+    transition: color 0.3s ease-in-out;
+}
+
+.header-nav-bottom .dropdown-item:hover {
     color: #1E2024;
 }
 
