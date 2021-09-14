@@ -13,9 +13,9 @@
                         {{ trans('faq::messages.empty') }}
                     </div>
                 @else
-                    <div class="accordion faqs" id="faq">
+                    <div class="accordion" id="faq">
                         @foreach($questions as $question)
-                            <div class="card faq">
+                            <div class="card">
                                 <div class="card-header px-3 py-4" id="heading{{ $question->id }}">
                                     <a class="collapsed" data-toggle="collapse" href="#collapse{{ $question->id }}" data-target="#collapse{{ $question->id }}" aria-expanded="false" aria-controls="collapse{{ $question->id }}">
                                         {{ $question->name }}
