@@ -15,7 +15,6 @@
     <meta property="og:description" content="@yield('description', setting('description', ''))">
     <meta property="og:site_name" content="{{ site_name() }}">
 @stack('meta')
-    @laravelPWA
 
 <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
