@@ -82,7 +82,7 @@
                             </a>
                         </li>
                     @else
-                        <li class="dropdown item">
+                        <li class="dropdown item"  style="list-style-type: none;">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown{{ $element->id }}" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 {{ $element->name }}
                             </a>
