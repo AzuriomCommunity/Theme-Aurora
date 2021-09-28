@@ -26,7 +26,7 @@
     <div class="container content">
         <div class="page-container">
             <div class="page-container-content">
-                <h1 class="page-container-title">Boutique</h1>
+                <h1 class="page-container-title">Shop</h1>
 
                 <div class="row">
                     <div class="col-lg-3">
