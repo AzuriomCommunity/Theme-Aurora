@@ -108,7 +108,7 @@
             {{ setting('copyright') }} | @lang('messages.copyright')
             <p style="margin-top: 10px;font-size: 10px;">
                 <a class="mention" href="https://twitter.com/Captain34_dev" target="_blank">
-                    Designed with <i class="fas fa-heart"></i> by Captain34
+                    Designed with <i class="fas fa-heart"></i> by Captain34, Oximov
                 </a>
             </p>
         </div>
