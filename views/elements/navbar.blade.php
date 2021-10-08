@@ -14,6 +14,13 @@
             </ul>
             <ul class="header-nav-top-right">
                 @guest
+                @plugin('discord-auth')
+                @guest
+                <li class="item" style="list-style-type: none;">
+                    <a href="{{ route('discord-auth.login') }}">{{ trans('discord-auth::messages.login_via_discord') }}</a>
+                </li>
+                @endguest
+                @endplugin
                 <li class="item" style="list-style-type: none;">
                     <a href="{{ route('login') }}">
                         {{ trans('auth.login') }}
@@ -28,7 +35,7 @@
                 @endif
                 @else
                 @include('elements.notifications')
-                <li class="item"  style="list-style-type: none;">
+                <li class="item" style="list-style-type: none;">
                     <a id="userDropdown" class="nav-link dropdown-toggle user-nav-link" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <img src="{{ auth()->user()->getAvatar(150) }}" class="rounded img-fluid" alt="{{ auth()->user()->name }}"> {{ Auth::user()->name }} <span class="caret"></span>
                     </a>
