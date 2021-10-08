@@ -19,25 +19,21 @@
                         {{ trans('auth.login') }}
                     </a>
                 </li>
-                @endif @plugin('discord-auth')
-                <li class="item" style="list-style-type: none;">
-                    <a href="{{ route('discord-auth.login') }}">{{ trans('discord-auth::messages.login_via_discord') }}</a>
-                </li>
-                @endplugin
                 @if(Route::has('register'))
                 <li class="item" style="list-style-type: none;">
                     <a href="{{ route('register') }}">
                         {{ trans('auth.register') }}
                     </a>
                 </li>
+                @endif
                 @else
                 @include('elements.notifications')
-                <li class="item" style="list-style-type: none;">
+                <li class="item"  style="list-style-type: none;">
                     <a id="userDropdown" class="nav-link dropdown-toggle user-nav-link" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <img src="{{ auth()->user()->getAvatar(150) }}" class="rounded img-fluid" alt="{{ auth()->user()->name }}"> {{ Auth::user()->name }} <span class="caret"></span>
                     </a>
 
-                    <div class="dropdown-menu dropdown-menu-right dropdown-menu" aria-labelledby="userDropdown">
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
                         <a class="dropdown-item" href="{{ route('profile.index') }}">
                             {{ trans('messages.nav.profile') }}
                         </a>
@@ -92,7 +88,7 @@
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown{{ $element->id }}">
                         @foreach($element->elements as $childElement)
-                        <a class="dropdown-item @if($childElement->isCurrent()) active @endif" href="{{ $childElement->getLink() }}" @if($childElement->new_tab) target="_blank" rel="noopener noreferrer" @endif>{{ $childElement->name }}</a>
+                        <a class="dropdown-item @if($childElement->isCurrent()) active @endif text-white" href="{{ $childElement->getLink() }}" @if($childElement->new_tab) target="_blank" rel="noopener noreferrer" @endif>{{ $childElement->name }}</a>
                         @endforeach
                     </div>
                 </li>
