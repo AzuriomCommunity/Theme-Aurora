@@ -1,9 +1,6 @@
 @extends('layouts.app')
 
 @section('title', trans('shop::messages.cart.title'))
-@extends('layouts.app')
-
-@section('title', trans('shop::messages.cart.title'))
 
 @push('styles')
     <style>

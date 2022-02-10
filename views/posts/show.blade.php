@@ -47,7 +47,8 @@
                     </div>
                 </div>
 
-                @foreach($post->comments as $comment)
+                <section id="comments">
+                    @foreach($post->comments as $comment)
                     <div class="card shadow-sm mb-3">
                         <div class="card-header">
                             @lang('messages.comments.author', ['user' => $comment->author->name, 'date' => format_date($comment->created_at, true)])
@@ -67,7 +68,8 @@
                             </div>
                         </div>
                     </div>
-                @endforeach
+                    @endforeach
+                </section>
 
                 @can('create', \Azuriom\Models\Comment::class)
                     <div class="card mt-4 shadow-sm">

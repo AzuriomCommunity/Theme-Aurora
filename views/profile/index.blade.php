@@ -41,7 +41,9 @@
                                         </button>
                                     </form>
                                 @else
-                                    <a class="btn btn-primary" href="{{ route('profile.2fa.index') }}">{{ trans('messages.profile.2fa.enable') }}</a>
+                                    <a class="btn btn-primary" href="{{ route('profile.2fa.index') }}">
+                                        {{ trans('messages.profile.2fa.enable') }}                                      
+                                    </a>
                                 @endif
                             </div>
                         </div>

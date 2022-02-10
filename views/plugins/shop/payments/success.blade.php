@@ -1,15 +1,11 @@
 @extends('layouts.app')
 
-@section('title', 'Payment')
+@section('title', trans('shop::messages.payment.title'))
 
 @section('content')
     <div class="container content">
-        <div class="page-container">
-            <div class="page-container-content">
-                <h1>{{ trans('shop::messages.payment.success') }}</h1>
+        <h1>{{ trans('shop::messages.payment.success') }}</h1>
 
-                <p>{{ trans('shop::messages.payment.success-info') }}</p>
-            </div>
-        </div>
+        <p>{{ trans('shop::messages.payment.success-info') }}</p>
     </div>
 @endsection
