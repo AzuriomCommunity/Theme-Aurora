@@ -1,6 +1,6 @@
 @extends('admin.layouts.admin')
 
-@section('title', 'Theme config')
+@section('title', 'Aurora config')
 
 @push('footer-scripts')
     <script>
@@ -62,8 +62,8 @@
                 </div>
 
                 <div class="mb-3">
-                    <label class="form-label"  for="footer_descriptionInput">{{ trans('theme::theme.config.footer_description') }}</label>
-                    <input type="text" class="form-control @error('title') is-invalid @enderror" id="footer_descriptionInput" name="footer_description" value="{{ old('footer_description', theme_config('footer_description')) }}">
+                    <label class="form-label"  for="footerDescriptionInput">{{ trans('theme::theme.config.footer_description') }}</label>
+                    <input type="text" class="form-control @error('title') is-invalid @enderror" id="footerDescriptionInput" name="footer_description" value="{{ old('footer_description', theme_config('footer_description')) }}">
 
                     @error('subtitle')
                     <span class="invalid-feedback" role="alert"><strong>{{ $message }}</strong></span>
