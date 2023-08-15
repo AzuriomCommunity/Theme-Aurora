@@ -1,13 +1,14 @@
 {
     "id": "aurora",
     "name": "Aurora",
-    "description": "Dark and aqua theme for Azuriom.",
-    "version": "2.0.1",
+    "description": "Innovative dark theme with configurable color for Azuriom.",
+    "version": "2.1.0",
     "url": "https:\/\/market.azuriom.com\/resources\/44",
     "authors": [
+        "Azuriom",
         "Captain34",
         "Oximov"
     ],
-    "azuriom_api": "1.0.0",
+    "azuriom_api": "1.1.0",
     "apiId": 44
 }
