@@ -48,8 +48,8 @@
     @yield('app')
 </div>
 
-<footer class="footer">
-    <div class="bg-dark-subtle py-5">
+<footer class="footer" data-bs-theme="dark">
+    <div class="text-body bg-dark-subtle py-5">
         <div class="container">
             <div class="row gy-3">
                 <div class="col-md-4 about">
@@ -80,7 +80,7 @@
         </div>
     </div>
 
-    <div class="bg-body-secondary">
+    <div class="text-body bg-body-secondary">
         <div class="container py-4">
             <div class="row">
                 <div class="col-md-6">

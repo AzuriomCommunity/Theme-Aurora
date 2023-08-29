@@ -1,4 +1,4 @@
-<div class="bg-body-secondary">
+<div class="text-body bg-dark" data-bs-theme="dark">
     <div class="container">
         <div class="navbar navbar-expand-md py-0">
             <div class="navbar-nav me-auto">
@@ -27,6 +27,12 @@
                             <a class="dropdown-item" href="{{ route('profile.index') }}">
                                 {{ trans('messages.nav.profile') }}
                             </a>
+
+                            @foreach(plugins()->getUserNavItems() ?? [] as $navId => $navItem)
+                                <a class="dropdown-item" href="{{ route($navItem['route']) }}">
+                                    {{ trans($navItem['name']) }}
+                                </a>
+                            @endforeach
 
                             @if(Auth::user()->hasAdminAccess())
                                 <a class="dropdown-item" href="{{ route('admin.dashboard') }}">
